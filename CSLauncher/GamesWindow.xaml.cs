@@ -37,17 +37,6 @@ namespace CSLauncher
         {
 
         }
-        private void Window_Initialized(object sender, EventArgs e)
-        {
-            this.Top = Properties.Settings.Default.Top;
-            this.Left = Properties.Settings.Default.Left;
-            this.Height = Properties.Settings.Default.Height;
-            this.Width = Properties.Settings.Default.Width;
-            if (Properties.Settings.Default.Maximized)
-            {
-                WindowState = WindowState.Maximized;
-            }
-        }
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (WindowState == WindowState.Maximized)
@@ -76,6 +65,30 @@ namespace CSLauncher
             ProjectImpact PIW = new ProjectImpact();
             PIW.Show();
             Close();
+        }
+
+        private void Window_SourceInitialized(object sender, EventArgs e)
+        {
+            this.Top = Properties.Settings.Default.Top;
+            this.Left = Properties.Settings.Default.Left;
+            this.Height = Properties.Settings.Default.Height;
+            this.Width = Properties.Settings.Default.Width;
+            if (Properties.Settings.Default.Maximized)
+            {
+                WindowState = WindowState.Maximized;
+            }
+        }
+
+        private void Window_ContentRendered(object sender, EventArgs e)
+        {
+            this.Top = Properties.Settings.Default.Top;
+            this.Left = Properties.Settings.Default.Left;
+            this.Height = Properties.Settings.Default.Height;
+            this.Width = Properties.Settings.Default.Width;
+            if (Properties.Settings.Default.Maximized)
+            {
+                WindowState = WindowState.Maximized;
+            }
         }
     }
 }

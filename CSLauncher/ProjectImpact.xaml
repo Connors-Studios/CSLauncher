@@ -8,10 +8,10 @@
         Title="CSLauncher" Height="850" Width="1500" Background="#FF1B1B1B" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" Initialized="Window_Initialized" Closing="Window_Closing" ContentRendered="Window_ContentRendered" WindowStyle="ThreeDBorderWindow">
     <Grid>
         <TextBlock Name="VersionText" VerticalAlignment="Bottom" FontSize="20" Foreground="White" Margin="1018,0,10,543"/>
-        <Button Name="PlayButton" Content="Checking For Updates" Click="PlayButton_Click" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFD0000" Margin="0,472,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" MinWidth="150" Background="Black" Padding="10,1,10,1"/>
-        <ProgressBar x:Name="progressBar" Background="Black" Margin="0,519,0,0" BorderBrush="{x:Null}" Visibility="Hidden"/>
-        <TextBlock Text="Speed" x:Name="labelSpeed" Margin="10,528,858,6" FontSize="25" Foreground="White" Visibility="Hidden"/>
-        <TextBlock Text="Percentage" x:Name="labelPerc" Margin="502,532,502,12" FontSize="25" Foreground="White" Visibility="Visible"/>
-        <TextBlock Text="Downloaded" x:Name="labelDownloaded" Margin="790,528,10,8" FontSize="25" Foreground="White" Visibility="Visible"/>
+        <Button Name="PlayButton" Content="Checking For Updates" Click="PlayButton_Click" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFD0000" VerticalAlignment="Bottom" HorizontalAlignment="Center" MinWidth="150" Background="Black" Margin="0,0,0,50" BorderBrush="{x:Null}" />
+        <ProgressBar x:Name="progressBar" Background="Black" BorderBrush="{x:Null}" Visibility="Visible" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Foreground="Red"/>
+        <TextBlock Text="Speed" x:Name="labelSpeed" FontSize="25" Foreground="White" Visibility="Visible" Margin="20,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="200" TextAlignment="Center"/>
+        <TextBlock Text="Percentage" x:Name="labelPerc" Margin="0,0,0,0" FontSize="25" Foreground="White" Visibility="Visible" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="148" TextAlignment="Center"/>
+        <TextBlock Text="Downloaded" x:Name="labelDownloaded" FontSize="25" Foreground="White" Visibility="Visible" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="300" Margin="0,0,20,0" TextAlignment="Center"/>
     </Grid>
 </Window>
