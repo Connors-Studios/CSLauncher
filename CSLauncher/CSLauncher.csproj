@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <None Remove="Images\Games.png" />
+    <None Remove="Images\Home.png" />
+    <None Remove="Images\Settings.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +18,8 @@
 
   <ItemGroup>
     <Resource Include="Images\Games.png" />
+    <Resource Include="Images\Home.png" />
+    <Resource Include="Images\Settings.png" />
   </ItemGroup>
 
   <ItemGroup>

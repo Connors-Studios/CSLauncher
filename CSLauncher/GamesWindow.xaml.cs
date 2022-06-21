@@ -70,5 +70,12 @@ namespace CSLauncher
 
             Properties.Settings.Default.Save();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ProjectImpact PIW = new ProjectImpact();
+            PIW.Show();
+            Close();
+        }
     }
 }
