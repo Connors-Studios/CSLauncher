@@ -17,7 +17,7 @@
                             <DoubleAnimation
                 Storyboard.TargetName='progressbar' 
                 Storyboard.TargetProperty='Value'
-                From='0' To='100' Duration='0:0:0.1'/>
+                From='0' To='100' Duration='0:0:1.5'/>
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>

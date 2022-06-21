@@ -23,13 +23,13 @@ namespace CSLauncher.Images
         public Startup()
         {
             InitializeComponent();
-            //AutoUpdater.Start("url/CSLauncherUpdate.xml");
+            AutoUpdater.Start("https://connorsstudios.net/shared-files/123/AutoUpdates.xml");
             Startup_Delay();
 
         }
         public async void Startup_Delay()
         {
-            await Task.Delay(2500);
+            await Task.Delay(1500);
             MainWindow MW = new MainWindow();
             MW.Show();
             Close();

@@ -74,6 +74,7 @@
     <Grid>
         <TextBlock Name="VersionText" VerticalAlignment="Bottom" FontSize="20" Foreground="White" Margin="1018,0,10,543"/>
         <Button Name="PlayButton" Content="Checking For Updates" Click="PlayButton_Click" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFD0000" VerticalAlignment="Bottom" HorizontalAlignment="Center" MinWidth="150" Background="Black" Margin="0,0,0,50" BorderBrush="{x:Null}" />
+        <Button Name="BackButton" Content="Back" Click="BackButton_Click" Height="45" FontSize="25" FontWeight="Bold" Foreground="#DDFD0000" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="120" Background="Black" BorderBrush="{x:Null}" />
         <ProgressBar x:Name="progressBar" Background="Black" BorderBrush="{x:Null}" Visibility="Visible" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Foreground="Red"/>
         <ProgressBar Style="{DynamicResource ProgressBarStyle1}" x:Name="progressBar1" Background="{x:Null}" BorderBrush="{x:Null}" Visibility="Visible" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Foreground="Cyan" IsIndeterminate="True"/>
         <TextBlock Text="Speed" x:Name="labelSpeed" FontSize="25" Foreground="White" Visibility="Visible" Margin="20,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="200" TextAlignment="Center"/>
