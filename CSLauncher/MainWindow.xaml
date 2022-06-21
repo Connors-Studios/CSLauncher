@@ -7,7 +7,7 @@
         xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Class="CSLauncher.MainWindow"
         mc:Ignorable="d"
         Title="CSLauncher" Height="850" Width="1500" Background="#FF1B1B1B" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" Closing="Window_Closing" SourceInitialized="Window_SourceInitialized" ContentRendered="Window_ContentRendered">
-    <Grid>
+    <Grid Cursor="Hand">
         <!--Side Home,Games and settings with border-->
         <Image Source="Images/Home.png" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,100" Cursor="Hand" MouseLeftButtonDown="HomePressedLMB"/>
         <Image Source="Images/Games.png" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,200" Cursor="Hand" MouseLeftButtonDown="GamesPressedLMB"/>
