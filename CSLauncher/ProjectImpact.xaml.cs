@@ -17,6 +17,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Net;
 using System.Threading;
+using System.Windows.Media.Animation;
 
 namespace CSLauncher
 {
@@ -26,6 +27,16 @@ namespace CSLauncher
         failed,
         downloadingGame,
         downloadingUpdate
+    }
+    public static class ProgressBarExtensions
+    {
+        private static TimeSpan duration = TimeSpan.FromSeconds(0.1);
+
+        public static void SetPercent(this ProgressBar progressBar, double percentage)
+        {
+            DoubleAnimation animation = new DoubleAnimation(percentage, duration);
+            progressBar.BeginAnimation(ProgressBar.ValueProperty, animation);
+        }
     }
 
     /// <summary>
@@ -73,8 +84,9 @@ namespace CSLauncher
             versionFile = Path.Combine(rootPath, "PIVersion.txt");
             gameZip = Path.Combine(rootPath, "ProjectImpact.zip");
             gameExe = Path.Combine(rootPath, "ProjectImpact", "MyProject.exe");
-        }
 
+
+        }
         private void CheckForUpdates()
         {
             if (File.Exists(versionFile))
@@ -120,6 +132,7 @@ namespace CSLauncher
                     labelPerc.Visibility = Visibility.Visible;
                     labelSpeed.Visibility = Visibility.Visible;
                     progressBar.Visibility = Visibility.Visible;
+                    progressBar1.Visibility = Visibility.Visible;
                 }
                 else
                 {
@@ -128,6 +141,7 @@ namespace CSLauncher
                     labelPerc.Visibility = Visibility.Visible;
                     labelSpeed.Visibility = Visibility.Visible;
                     progressBar.Visibility = Visibility.Visible;
+                    progressBar1.Visibility = Visibility.Visible;
                     _onlineVersion = new Version(webClient.DownloadString("https://connorsstudios.net/shared-files/124/PIVersion.txt"));
                 }
 
@@ -149,7 +163,7 @@ namespace CSLauncher
             labelSpeed.Text = string.Format("{0} mb/s", (e.BytesReceived / 1024d / sw.Elapsed.TotalSeconds / 1000).ToString("0.00"));
 
             // Update the progressbar percentage only when the value is not the same.
-            progressBar.Value = e.ProgressPercentage;
+            progressBar.SetPercent(e.ProgressPercentage);
 
             // Show the percentage on our label.
             labelPerc.Text = e.ProgressPercentage.ToString() + "%";
@@ -176,6 +190,7 @@ namespace CSLauncher
                 labelPerc.Visibility = Visibility.Hidden;
                 labelSpeed.Visibility = Visibility.Hidden;
                 progressBar.Visibility = Visibility.Hidden;
+                progressBar1.Visibility = Visibility.Hidden;
             }
             catch (Exception ex)
             {
