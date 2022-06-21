@@ -35,7 +35,9 @@ namespace CSLauncher
         }
         private void SettingsPressedLMB(object sender, MouseButtonEventArgs e)
         {
-
+            SettingsWND SW = new SettingsWND();
+            SW.Show();
+            Close();
         }
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {

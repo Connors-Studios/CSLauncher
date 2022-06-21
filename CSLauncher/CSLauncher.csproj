@@ -4,12 +4,20 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/Connors-Studios/CSLauncher</RepositoryUrl>
+    <Copyright>Copyright © 2022 Connors Studios | CS</Copyright>
+    <PackageProjectUrl>https://connorsstudios.net/about</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\CSLogo1.ico" />
+    <None Remove="Images\CSLogo1.png" />
     <None Remove="Images\Games.png" />
     <None Remove="Images\Home.png" />
     <None Remove="Images\Settings.png" />
+    <None Remove="Images\Unknown.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,9 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\CSLogo1.ico" />
+    <Resource Include="Images\CSLogo1.png" />
     <Resource Include="Images\Games.png" />
     <Resource Include="Images\Home.png" />
     <Resource Include="Images\Settings.png" />
+    <Resource Include="Images\Unknown.png" />
   </ItemGroup>
 
   <ItemGroup>
