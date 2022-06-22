@@ -28,6 +28,7 @@ namespace CSLauncher
             InitializeComponent();
             AutoUpdater.Start("https://connorsstudios.net/shared-files/123/AutoUpdates.xml");
         }
+
         private void HomePressedLMB(object sender, MouseButtonEventArgs e)
         {
 
