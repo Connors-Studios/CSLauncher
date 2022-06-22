@@ -23,6 +23,7 @@ namespace CSLauncher.Images
         {
             InitializeComponent();
             VerText.Text = "Ver " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            Environment.SetEnvironmentVariable("WEBVIEW2_USER_DATA_FOLDER", @"C:\Temp\");
             Startup_Delay();
 
         }
