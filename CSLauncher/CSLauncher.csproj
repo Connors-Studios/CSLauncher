@@ -9,8 +9,8 @@
     <RepositoryUrl>https://github.com/Connors-Studios/CSLauncher</RepositoryUrl>
     <Copyright>Copyright © 2022 Connors Studios | CS</Copyright>
     <PackageProjectUrl>https://connorsstudios.net/about</PackageProjectUrl>
-    <AssemblyVersion>1.0.0.2</AssemblyVersion>
-    <FileVersion>1.0.0.2</FileVersion>
+    <AssemblyVersion>1.0.0.3</AssemblyVersion>
+    <FileVersion>1.0.0.3</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
