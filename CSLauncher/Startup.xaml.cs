@@ -22,6 +22,7 @@ namespace CSLauncher.Images
         public Startup()
         {
             InitializeComponent();
+            VerText.Text = "Ver " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Startup_Delay();
 
         }

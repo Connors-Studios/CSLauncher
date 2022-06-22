@@ -9,6 +9,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="CSLauncher" VerticalAlignment="Top" Margin="94,25,94,0" Foreground="White"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Starting" VerticalAlignment="Center" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="Ver 9.9.9.9" VerticalAlignment="Top" Foreground="White" Width="57" x:Name="VerText"/>
         <ProgressBar HorizontalAlignment="Stretch" Height="10" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Red" x:Name="progressbar" >
             <ProgressBar.Triggers>
                 <EventTrigger RoutedEvent='ProgressBar.Loaded'>
