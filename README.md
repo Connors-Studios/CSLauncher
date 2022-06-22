@@ -1,3 +1,3 @@
 # ![CSLLogo](https://user-images.githubusercontent.com/106664737/175026994-39f07f7f-4154-49ef-a81a-0b4ac23789ab.png)
-## CSLauncher
-You May View the Source Code but not USE IT.
+## CSLauncher Now Open Source
+You may not SELL this software.
