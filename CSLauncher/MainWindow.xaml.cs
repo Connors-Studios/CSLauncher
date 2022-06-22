@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Windows.Threading;
+using AutoUpdaterDotNET;
 
 namespace CSLauncher
 {
@@ -25,6 +26,7 @@ namespace CSLauncher
         public MainWindow()
         {
             InitializeComponent();
+            AutoUpdater.Start("https://connorsstudios.net/shared-files/123/AutoUpdates.xml");
         }
         private void HomePressedLMB(object sender, MouseButtonEventArgs e)
         {

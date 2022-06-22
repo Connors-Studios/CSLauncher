@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using AutoUpdaterDotNET;
 
 namespace CSLauncher.Images
 {
@@ -23,7 +22,6 @@ namespace CSLauncher.Images
         public Startup()
         {
             InitializeComponent();
-            AutoUpdater.Start("https://connorsstudios.net/shared-files/123/AutoUpdates.xml");
             Startup_Delay();
 
         }

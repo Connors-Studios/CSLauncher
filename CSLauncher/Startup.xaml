@@ -8,7 +8,7 @@
         Title="Startup" Height="250" Width="250" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#FF1B1B1B">
     <Grid>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="CSLauncher" VerticalAlignment="Top" Margin="94,25,94,0" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Checking for updates" VerticalAlignment="Center" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Starting" VerticalAlignment="Center" Foreground="White"/>
         <ProgressBar HorizontalAlignment="Stretch" Height="10" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Red" x:Name="progressbar" >
             <ProgressBar.Triggers>
                 <EventTrigger RoutedEvent='ProgressBar.Loaded'>
@@ -17,7 +17,7 @@
                             <DoubleAnimation
                 Storyboard.TargetName='progressbar' 
                 Storyboard.TargetProperty='Value'
-                From='0' To='100' Duration='0:0:1.5'/>
+                From='0' To='100' Duration='0:0:1'/>
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>
