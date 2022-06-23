@@ -2,4 +2,5 @@
 ## CSLauncher Now Open Source
 CSLauncher was made open source so anybody who wants to make it look nicer or function better or learn from it you can and if you are unsure you want to use it you can look through the code.
 ## Building from source
-Download [Visual Studio](https://visualstudio.microsoft.com/) 2019 or 2022.
+Download Visual studio 2019 or 2022.
+[Visual Studio](https://visualstudio.microsoft.com/)
