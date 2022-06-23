@@ -169,28 +169,30 @@ namespace CSLauncher
             labelPerc.Text = e.ProgressPercentage.ToString() + "%";
 
             // Update the label with how much data have been downloaded so far and the total size of the file we are currently downloading
+            string BR = "0.00";
+            string TBTR = "0.00";
             string BRType = "a";
             string TBTRType = "a";
-            labelDownloaded.Text = string.Format("{0} " + BRType + " / {1} " + TBTRType);
                 if (e.BytesReceived / 1024d / 1024d >= 1024) 
             {
-                (e.BytesReceived / 1024d / 1024d / 1024d).ToString("0.00");
+                BR = (e.BytesReceived / 1024d / 1024d / 1024d).ToString("0.00");
                 BRType = "GB's";
             }
             else
             {
-                (e.BytesReceived / 1024d / 1024d).ToString("0.00");
+                BR = (e.BytesReceived / 1024d / 1024d).ToString("0.00");
                 BRType = "MB's";
             }
                 if (e.TotalBytesToReceive / 1024d / 1024d >= 1024)
             {
-                (e.TotalBytesToReceive / 1024d / 1024d / 1024d).ToString("0.00");
+                TBTR = (e.TotalBytesToReceive / 1024d / 1024d / 1024d).ToString("0.00");
                 TBTRType = "GB's";
             } else
             {
-                (e.TotalBytesToReceive / 1024d / 1024d).ToString("0.00");
+                TBTR = (e.TotalBytesToReceive / 1024d / 1024d).ToString("0.00");
                 TBTRType = "MB's";
             }
+            labelDownloaded.Text = BR + " " + BRType + " / " + TBTR + " " + TBTRType;
         }
 
         private void DownloadGameCompletedCallback(object sender, AsyncCompletedEventArgs e)
