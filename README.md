@@ -1,11 +1,15 @@
 # ![CSLLogo](https://user-images.githubusercontent.com/106664737/175026994-39f07f7f-4154-49ef-a81a-0b4ac23789ab.png)
+## Content
+[CSLauncher Now Open Source](https://github.com/Connors-Studios/CSLauncher#cslauncher-now-open-source)
+[Building from the source](https://github.com/Connors-Studios/CSLauncher#building-from-source-the-recommended-if-you-have-coding-experience)
+[Installing from the installer](https://github.com/Connors-Studios/CSLauncher#installing-from-the-installer)
 ## CSLauncher Now Open Source
 
 
 CSLauncher was made open source so anybody who wants to make it look nicer or function better or learn from it you can and if you are unsure you want to use it you can look through the code.
 
 
-## Building from source (Recommended if you have coding experience)
+## Building from the source (Recommended if you have coding experience)
 
 
 Download Visual studio 2019 or 2022.
